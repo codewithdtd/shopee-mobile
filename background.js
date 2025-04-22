@@ -6,5 +6,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             width: 414,
             height: 896
         });
+    } else if (message.action === "disableMobileMode") {
+        chrome.declarativeNetRequest.updateEnabledRulesets({
+            disableRulesetIds: ["1"]
+        }, () => {
+            console.log("Mobile mode disabled.");
+        });
     }
 });

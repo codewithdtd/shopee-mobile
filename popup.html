@@ -6,10 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee Mobile Viewer</title>
     <script src="popup.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            width: fit-content;
+        }
+
+        button#openShopee {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            width: max-content;
+        }
+
+        button#disableMobileMode {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #999999;
+            color: white;
+            cursor: pointer;
+            width: max-content;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body>
     <button id="openShopee">Mở Shopee Mobile</button>
+    <button id="disableMobileMode">Tắt chế độ Mobile</button>
 </body>
 
 </html>
